@@ -1,4 +1,4 @@
-package org.swqxdba.jlogic;
+package io.github.swqxdba.jlogic;
 
 import java.util.List;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package org.swqxdba.jlogic;
+package io.github.swqxdba.jlogic;
 
 import javax.sql.DataSource;
 import java.io.PrintWriter;
@@ -13,19 +13,19 @@ public class LogicDeleteDatasource implements DataSource {
 
 
 
-    public LogicDeleteDatasource(DataSource dataSource, LogicDeleteHandler logicDeleteHandler) {
+    public LogicDeleteDatasource(DataSource dataSource, io.github.swqxdba.jlogic.LogicDeleteHandler logicDeleteHandler) {
         this.dataSource = dataSource;
         this.logicDeleteHandler = logicDeleteHandler;
     }
 
     @Override
     public Connection getConnection() throws SQLException {
-        return new LoginDeleteConnection(dataSource.getConnection(),logicDeleteHandler);
+        return new io.github.swqxdba.jlogic.LoginDeleteConnection(dataSource.getConnection(),logicDeleteHandler);
     }
 
     @Override
     public Connection getConnection(String username, String password) throws SQLException {
-        return new LoginDeleteConnection(dataSource.getConnection(username,password),logicDeleteHandler);
+        return new io.github.swqxdba.jlogic.LoginDeleteConnection(dataSource.getConnection(username,password),logicDeleteHandler);
     }
 
     @Override

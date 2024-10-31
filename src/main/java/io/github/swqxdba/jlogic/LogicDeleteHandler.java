@@ -1,4 +1,4 @@
-package org.swqxdba.jlogic;
+package io.github.swqxdba.jlogic;
 
 import com.alibaba.druid.DbType;
 import com.alibaba.druid.sql.SQLUtils;
@@ -6,7 +6,7 @@ import com.alibaba.druid.sql.ast.SQLStatement;
 import com.alibaba.druid.sql.ast.statement.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.swqxdba.jlogic.util.JLogicUtil;
+import io.github.swqxdba.jlogic.util.JLogicUtil;
 
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;

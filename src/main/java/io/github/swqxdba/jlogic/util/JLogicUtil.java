@@ -1,4 +1,4 @@
-package org.swqxdba.jlogic.util;
+package io.github.swqxdba.jlogic.util;
 
 import java.sql.*;
 import java.util.ArrayList;

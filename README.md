@@ -13,7 +13,7 @@
 有一个示例实现： `LogicDeleteConfigExample` 您可以参考它
 
 ```java
-package org.swqxdba.jlogic;
+package io.github.swqxdba.jlogic;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -195,7 +195,7 @@ class Demo {
 通过LogicDeleteHandler.processSql来对一条sql进行改写 返回改写后的sql
 
 ```java
-import org.swqxdba.jlogic.LogicDeleteHandler;
+import io.github.swqxdba.jlogic.LogicDeleteHandler;
 
 class Demo {
 

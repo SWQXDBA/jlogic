@@ -1,4 +1,4 @@
-package org.swqxdba.jlogic;
+package io.github.swqxdba.jlogic;
 
 import com.alibaba.druid.DbType;
 import com.alibaba.druid.sql.ast.SQLExpr;
@@ -20,14 +20,14 @@ import java.util.concurrent.atomic.AtomicReference;
  * <br/> select * from person left join teacher where person.deleted = 0
  */
 public class LogicDeleteSelectVisitor extends SQLASTVisitorAdapter {
-    private static final Logger log = LoggerFactory.getLogger(org.swqxdba.jlogic.LogicDeleteHandler.class);
-    org.swqxdba.jlogic.LogicDeleteConfig config;
+    private static final Logger log = LoggerFactory.getLogger(io.github.swqxdba.jlogic.LogicDeleteHandler.class);
+    io.github.swqxdba.jlogic.LogicDeleteConfig config;
 
     DbType dbType;
 
 
 
-    public LogicDeleteSelectVisitor(org.swqxdba.jlogic.LogicDeleteConfig config, DbType dbType) {
+    public LogicDeleteSelectVisitor(io.github.swqxdba.jlogic.LogicDeleteConfig config, DbType dbType) {
         this.config = config;
         this.dbType = dbType;
     }
@@ -38,7 +38,7 @@ public class LogicDeleteSelectVisitor extends SQLASTVisitorAdapter {
         final SQLTableSource from = queryBlock.getFrom();
         SQLExpr where = queryBlock.getWhere();
         final AtomicReference<SQLExpr> wrapper = new AtomicReference<>(where);
-        new org.swqxdba.jlogic.LogicDeleteTableSourceFilter(config, dbType).handleDispatch(from, wrapper);
+        new io.github.swqxdba.jlogic.LogicDeleteTableSourceFilter(config, dbType).handleDispatch(from, wrapper);
         where = wrapper.get();
         if (where != null) {
             queryBlock.setWhere(where);

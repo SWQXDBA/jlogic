@@ -1,4 +1,4 @@
-package org.swqxdba.jlogic;
+package io.github.swqxdba.jlogic;
 
 import com.alibaba.druid.sql.ast.SQLExpr;
 import com.alibaba.druid.sql.ast.SQLObject;

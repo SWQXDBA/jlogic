@@ -1,7 +1,7 @@
 package jlogic;
 
-import org.swqxdba.jlogic.LogicDeleteConfigExample;
-import org.swqxdba.jlogic.LogicDeleteHandler;
+import io.github.swqxdba.jlogic.LogicDeleteConfigExample;
+import io.github.swqxdba.jlogic.LogicDeleteHandler;
 
 public class LogicDeleteBenchMark {
     public static void main(String[] args) {

@@ -4,8 +4,8 @@ package jlogic;
 import com.alibaba.druid.DbType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.swqxdba.jlogic.LogicDeleteConfigExample;
-import org.swqxdba.jlogic.LogicDeleteHandler;
+import io.github.swqxdba.jlogic.LogicDeleteConfigExample;
+import io.github.swqxdba.jlogic.LogicDeleteHandler;
 
 public class SelectTest {
     final LogicDeleteHandler logicDeleteHandler =
